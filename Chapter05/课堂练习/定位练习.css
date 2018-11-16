@@ -1,0 +1,37 @@
+#kuangjia
+{   width: 800px;
+    height: 600px;
+    border: 1px solid red;
+    margin: auto;
+    /*position: relative;*/
+}
+#tu
+{
+    position: relative;
+}
+#tu ul li
+{   list-style: none;
+    float: left;
+    /*width: 30px;*/
+    /*height: 30px;*/
+    line-height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 50px;
+    opacity: 0.6;
+    background: black;
+    font-size: 13px;
+    color: white;
+}
+#tu ul
+{
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+}
+ul li:hover
+{
+    background: chocolate;
+    color: white;
+}

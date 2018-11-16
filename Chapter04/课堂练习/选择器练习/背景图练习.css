@@ -1,0 +1,54 @@
+*
+{margin: 0;
+ padding: 0;}
+#beijin
+{   height: 400px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    background-image: url("img/bg(1).jpg");
+}
+/*#shuru*/
+/*{*/
+    /*height: 100px;*/
+    /*border:1px solid red;*/
+
+/*}*/
+#top
+{
+    height: 40px;
+    background: red;
+    color: black;
+}
+#top ul li:hover
+{background: blue;
+    color: white;}
+#top ul>li:first-child
+{
+    width: 300px;}
+#top ul li
+{ list-style:none;
+  float: left;
+    font-size: 20px;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+}
+#zuobiaoqian
+{ width: 300px ;
+/*border: 1px solid red;*/
+margin-top:10px;
+    margin-left: 5px;
+}
+#zuobiaoqian ul li
+{ border: 1px dashed red;
+  border-radius: 10px;
+    font-size: 20px;
+    list-style-image: url("img/list1.png");
+    list-style-position: inside;
+    margin-bottom: 5px;
+ text-align: center;
+}
+#zuobiaoqian ul li:hover
+{ list-style-image: url("img/list2.png")}
