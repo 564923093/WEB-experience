@@ -1,0 +1,191 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+#container
+{
+    width: 100%;
+    height: 1200px;
+    border: 1px solid red;
+}
+#header
+{
+    height: 85px;
+    width: 100%;
+    border: 1px solid black;
+    background: black;
+    opacity: 0.8;
+
+}
+#wrap
+{
+    background: url("../img/bg_wrapper2.jpg");
+    width: 100%;
+    height: 1100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#header .header-inner
+{
+    width: 1200px;
+    height: 84px;
+    margin: 0 auto;
+}
+#header .header-inner .logo
+{
+    float:left;
+
+}
+#header .header-inner ul li
+{
+    list-style: none;
+    float: left;
+    width: 110px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    margin: 0 auto;
+}
+#header .header-inner ul li:hover
+{
+    background-image: url("../img/index.png");
+
+}
+#header .header-inner ul li:hover a
+{color:#e4b653;}
+#header .header-inner ul li:hover em
+{color:#e4b653;}
+#header .header-inner ul li a
+{
+    font-size: 18px;
+    color: #c9c9dd;
+    text-decoration: none;
+}
+#header .header-inner ul li em
+{
+    font-size: 12px;
+    color: #858792;
+    display: block;
+    font-style: normal;
+    margin-top: -60px;
+}
+#header .header-inner #login
+{
+    float: right;
+    width: 215px;
+    height: 85px;
+    padding-top: 20px;
+}
+#header .header-inner #login .login-pic
+{
+    background-image:url("../img/index.png") ;
+    background-position: 219px 0;
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+#header .header-inner #login #login-text
+{
+    float: left;
+    display: block;
+    padding-top: 8px;
+}
+#header .header-inner #login #login-text a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+#header .header-inner #login #login-text p
+{
+    color: #858792;
+    font-size: 14px;
+}
+/*//////////======主体样式====/////////////////*/
+#container #main
+{
+    width: 1200px;
+    height: 1000px;
+    margin: 420px auto 0;
+    border: 1px solid red;
+}
+#main .news
+{
+    height: 342px;
+    width: 1200px;
+    border: 1px solid brown;
+}
+#main .news .news-text
+{
+    height: 342px;
+    width: 964px;
+    background: url("../img/rotate_bg.png") no-repeat;
+    float: left;
+}
+/*===============图片轮播区域==================*/
+.news-text-left
+{
+    width: 604px;
+    height: 342px;
+}
+.news-text-left .top
+{
+   height:  298px;
+    width: 604px;
+}
+.news-text-left .bottom
+{
+    width: 604px;
+    height: 44px;
+}
+.news-text-left .bottom ul li
+{
+    list-style: none;
+    width: 120.8px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #c9c9dd;
+    font-size: 14px;
+    float: left;
+}
+.news-text-left .bottom ul li:hover
+{
+    background-color: #57575e;
+    color: #f3be58;
+}
+/*=========图片轮播区域结束=======*/
+
+/*========右侧下载区域=========*/
+#main .news .news-img
+{
+    width: 236px;
+    height: 342px;
+    float: right;
+}
+#main .news .news-img a
+{
+    display: block;
+    /*margin-bottom: -4px;*/
+}
+#main .news .news-img .download
+{
+    width: 236px;
+    height: 128px;
+}
+#main .news .news-img .newman
+{
+    height: 106px;
+    width: 236px;
+}
+#main .news .news-img .try-area
+{
+    width: 236px;
+    height: 106px;
+}
+/*========右侧下载区域结束=========*/
