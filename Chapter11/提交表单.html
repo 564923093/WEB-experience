@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript">
+
+        function login()
+        {
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            if (username.length<3)
+            {
+                 document.getElementById("username_tip").innerHTML="<font color='red'>请输入正确的用户名</font>";
+                return false;
+            }
+            if (password.length<5||password.length>16)
+            {
+                document.getElementById("password_tip").innerHTML="<font color='red'>请输入正确的密码</font>";
+                // alert("请输入正确的密码");
+                return false;
+            }
+            return true;
+        }
+        // function keyEvent()
+        // {
+        //     var div=document.getElementById("username");
+        //     console.log(event.key);
+        //     if(event.key=="Control")
+        //     {
+        //         div.style.backgroundColor="red";
+        //     }
+        //     if(event.key=="Shift")
+        //     {
+        //         div.style.backgroundColor="green";
+        //     }
+        // }
+    </script>
+
+</head>
+<body onkeydown="keyEvent()">
+<form method="get" action="时间.html" onsubmit="return login()">
+
+    用户名：<input type="text" id="username"><span id="username_tip"></span> <br/>
+    密码  ：<input type="password" id="password"><span id="password_tip"></span> <br/>
+    <input type="submit">
+
+</form>
+</body>
+</html>

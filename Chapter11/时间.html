@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .kuangkuang
+        {
+            height: 200px;
+            width: 800px;
+            border: 1px solid blue;
+            margin:auto;
+        }
+    </style>
+
+</head>
+<body onkeydown="keyEvent()">
+<div class="kuangkuang" id="jiaoben" ></div>
+<script type="text/javascript">
+    function disPlayTime()
+    {
+        var myDate=new Date();
+        var iDate=myDate.getFullYear();
+        var month=myDate.getMonth();
+        var day=myDate.getDay();
+        var hour=myDate.getHours();
+        var min=myDate.getMinutes();
+        var second=myDate.getSeconds();
+
+        document.getElementById("jiaoben").innerHTML="时间"+iDate+"年"+month+"月"+day+"日"+hour+"时"+min+"分"+second+"秒";
+    }
+    setInterval("disPlayTime()",1000)
+
+    function keyEvent()
+    {
+        var div=document.getElementById("jiaoben");
+        console.log(event.key);
+        if(event.key=="Control")
+        {
+            div.style.backgroundColor="red";
+        }
+        if(event.key=="Shift")
+        {
+            div.style.backgroundColor="green";
+        }
+    }
+</script>
+</body>
+</html>

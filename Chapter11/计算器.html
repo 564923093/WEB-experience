@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+       function f() {
+
+
+        var op1=prompt("请输入第一个数字","0")
+        var op2=prompt("请输入第二个数字","0")
+        var op =prompt("请输入运算符","+")
+        var result
+
+        switch (op)
+        {
+            case "+":
+                result=parseInt(op1)+parseInt(op2)
+                break ;
+            case "-":
+                result=parseInt(op1)-parseInt(op2)
+                break ;
+            case "*":
+                result=parseInt(op1)*parseInt(op2)
+                break ;
+            case "/":
+                result=parseInt(op1)/parseInt(op2)
+                break ;
+        }
+        alert(op1+op+op2+"="+result);
+       }
+    </script>
+</head>
+<body>
+
+<button onclick="f()">点击运行计算器</button>
+
+</body>
+</html>
